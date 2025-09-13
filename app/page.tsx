@@ -3,6 +3,7 @@ import Banner from "@/components/Banner/Banner";
 import BannerHero from "@/components/BannerHero/BannerHero";
 import BannerSection from "@/components/BannerSection/BannerSection";
 import CardReview from "@/components/CardReview/CardReview";
+import Inventory from "@/components/Inventory/Intentory";
 import Faq from "@/components/Faq/Faq";
 import Footer from "@/components/Footer/Footer";
 
@@ -13,6 +14,8 @@ import GrassShadowBackground from "../images/grass_shadow_background.png";
 import GrassBackground from "../images/grass_background.png";
 import RockBackground from "../images/rock_background.png";
 import ImageBase from "../images/image_base.png";
+
+import Gameplay from "../images/gameplay.png";
 
 import Plate from "../images/plate.png";
 
@@ -61,6 +64,7 @@ export default function Home() {
         imageText={ChestIcon.src}
         imagePosition="right"
       />
+      <Inventory />
       <Banner
         title={"O Presente Ideal para Fãs de Minecraft"}
         subtitle={

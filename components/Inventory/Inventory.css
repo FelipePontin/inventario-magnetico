@@ -1,0 +1,97 @@
+.inventory {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 112px 0;
+}
+
+.inventory-container {
+    position: relative;
+    width: fit-content;
+    padding: 48px 24px 24px 24px;
+    background-color: #c6c6c6;
+    border-radius: 6px;
+    border: 8px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.inventory__dragAndDrop {
+    width: 10rem;
+    position: absolute;
+    top: -3.5rem;
+    right: -3.5rem;
+}
+
+.crafting-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0 3rem 0;
+    gap: 10px;
+}
+
+.grid-3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 64px);
+    gap: 4px;
+}
+
+.grid-9x3 {
+    display: grid;
+    grid-template-columns: repeat(9, 64px);
+    gap: 4px;
+}
+
+.hotbar {
+    display: grid;
+    grid-template-columns: repeat(9, 64px);
+    gap: 4px;
+}
+
+.slot {
+    width: 64px;
+    height: 64px;
+    background-color: #888;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-icon {
+    width: 48px;
+    height: 48px;
+    image-rendering: pixelated;
+}
+
+@media (max-width: 856px) {
+    .inventory-container {
+        transform: scale(0.8);
+        transform-origin: top center;
+    }
+
+    .inventory__dragAndDrop {
+        width: 8.5rem;
+        position: absolute;
+        top: -3.5rem;
+        right: -3.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .inventory-container {
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 420px) {
+    .inventory-container {
+        transform: scale(0.5);
+    }
+}
