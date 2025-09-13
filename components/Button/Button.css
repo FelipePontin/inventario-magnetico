@@ -1,0 +1,25 @@
+.button {
+    cursor: pointer;
+    border-radius: 5rem;
+    padding: 1rem 3.5rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: var(--buttonBackground);
+    color: var(--buttonColor);
+    transition: var(--transition);
+    width: max-content;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 1175px) {
+    .button {
+        font-size: 12px;
+    }
+}
