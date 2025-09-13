@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background: fixed;
+    align-items: center;
+    padding: 24px;
+}
+
+.footer__text {
+    text-align: center;
+    color: var(--bannerSubtitle)
+}

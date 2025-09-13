@@ -2,13 +2,21 @@ import Image from "next/image";
 import Banner from "@/components/Banner/Banner";
 import BannerHero from "@/components/BannerHero/BannerHero";
 import BannerSection from "@/components/BannerSection/BannerSection";
+import CardReview from "@/components/CardReview/CardReview";
+import Faq from "@/components/Faq/Faq";
+import Footer from "@/components/Footer/Footer";
 
 import Logo from "../images/logo.png";
 import DirtBackground from "../images/dirt_background.png";
 import WaterBackground from "../images/water_background.png";
 import GrassShadowBackground from "../images/grass_shadow_background.png";
+import GrassBackground from "../images/grass_background.png";
+import RockBackground from "../images/rock_background.png";
 import ImageBase from "../images/image_base.png";
 
+import Plate from "../images/plate.png";
+
+import HeartIcon from "../images/heart_icon.png";
 import ImaIcon from "../images/ima_icon.png";
 import ChestIcon from "../images/chest_icon.png";
 
@@ -61,6 +69,29 @@ export default function Home() {
         background={WaterBackground.src}
         buttonText={"GARANTIR O MEU AGORA"}
         textPosition={"right"}
+      />
+      <CardReview
+        title={"QUEM COMPROU, AMOU"}
+        subtitle={
+          "Centenas de fãs de Minecraft já transformaram suas geladeiras em inventários reais. A cada compra, mais sorrisos, mais nostalgia e mais criatividade fora da tela."
+        }
+        imageIcon={HeartIcon.src}
+      />
+      <Faq
+        title={"PERGUNTAS FREQUENTES"}
+        image={Plate.src}
+        background={RockBackground.src}
+      />
+      <BannerSection
+        title="Nos acompanhe nas redes sociais"
+        subtitle="Fique por dentro das novidades, lançamentos e promoções exclusivas."
+        image={Logo.src}
+        imagePosition="right"
+        socialMedia={true}
+      />
+      <Footer
+        text={"© 2025 Inventário Magnético. Todos os direitos reservados."}
+        background={GrassBackground.src}
       />
     </div>
   );

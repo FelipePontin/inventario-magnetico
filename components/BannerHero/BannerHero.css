@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 5rem 0;
 }
 
 .bannerHero__title {
@@ -28,4 +29,50 @@
 
 .bannerHero__image {
     max-width: 428px;
+}
+
+@media screen and (max-width: 991px) {
+    .bannerHero {
+        padding: 5rem 0;
+    }
+
+    .bannerHero__title {
+        font-size: 24px;
+    }
+
+    .bannerHero__subtitle {
+        font-size: 14px;
+    }
+
+    .bannerHero__image {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .bannerHero {
+        padding: 5rem 0;
+    }
+
+    .bannerHero__title {
+        font-size: 24px;
+    }
+
+    .bannerHero__subtitle {
+        font-size: 14px;
+    }
+
+    .bannerHero__image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .bannerHero {
+        padding: 5rem 24px;
+        text-align: center;
+    }
+
+    .bannerHero__image {
+        width: 245px;
+    }
 }

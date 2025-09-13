@@ -47,6 +47,26 @@
     width: 100%;
 }
 
+.bannerSection__social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bannerSection__social--icon {
+    width: 40px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.bannerSection__social--icon:hover {
+    transform: scale(1.05);
+}
+
+.bannerSection__social--icon:active {
+    transform: scale(0.9);
+}
+
 @media screen and (max-width: 1128px) {
     .bannerSection {
         flex-direction: column-reverse;
@@ -73,5 +93,10 @@
 
     .bannerSection__image {
         max-width: 568px;
+    }
+
+    .bannerSection__social {
+        justify-content: center;
+        align-items: center;
     }
 }

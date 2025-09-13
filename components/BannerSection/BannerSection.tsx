@@ -1,5 +1,9 @@
 import React from "react";
 
+import InstagramIcon from "../../images/instagram_icon.png";
+import TiktokIcon from "../../images/tiktok_icon.png";
+import YoutubeIcon from "../../images/youtube_icon.png";
+
 import "./BannerSection.css";
 
 export interface BannerSectionProps {
@@ -8,6 +12,7 @@ export interface BannerSectionProps {
   image?: string;
   imageText?: string;
   imagePosition?: "left" | "right";
+  socialMedia?: boolean;
 }
 
 const BannerSection = ({
@@ -16,6 +21,7 @@ const BannerSection = ({
   image,
   imageText,
   imagePosition,
+  socialMedia,
 }: BannerSectionProps) => {
   const positions: Record<string, string> = {
     left: "bannerSection--left",
@@ -27,13 +33,37 @@ const BannerSection = ({
       <img className="bannerSection__image" src={image} />
       <div className="bannerSection__content">
         <div className="bannerSection__title--division">
-          <img className="bannerSection__image--text" src={imageText} />
+          {imageText && (
+            <img className="bannerSection__image--text" src={imageText} />
+          )}
           <h1 className="bannerSection__title">{title}</h1>
         </div>
         <div
           className="bannerSection__subtitle"
           dangerouslySetInnerHTML={{ __html: subtitle ?? "" }}
         ></div>
+        {socialMedia && (
+          <div className="bannerSection__social">
+            <a href="https://www.instagram.com/inventariomagnetico">
+              <img
+                className="bannerSection__social--icon"
+                src={InstagramIcon.src}
+              />
+            </a>
+            <a href="https://www.tiktok.com/@inventariomagnetico">
+              <img
+                className="bannerSection__social--icon"
+                src={TiktokIcon.src}
+              />
+            </a>
+            <a href="https://www.youtube.com/@InventárioMagnético">
+              <img
+                className="bannerSection__social--icon"
+                src={YoutubeIcon.src}
+              />
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );
