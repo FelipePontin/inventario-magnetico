@@ -13,5 +13,5 @@
 .footer__text {
     font-size: 14px;
     text-align: center;
-    color: var(--bannerSubtitle)
+    color: var(--bannerSubtitle);
 }

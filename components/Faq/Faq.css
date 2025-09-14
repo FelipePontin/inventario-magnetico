@@ -64,6 +64,12 @@
     }
 }
 
+@media screen and (max-width: 790px) {
+    .faq__title {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .faq {
         padding: 48px 24px;

@@ -1,97 +1,101 @@
 .inventory {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0 112px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 112px 0;
 }
 
 .inventory-container {
-    position: relative;
-    width: fit-content;
-    padding: 48px 24px 24px 24px;
-    background-color: #c6c6c6;
-    border-radius: 6px;
-    border: 8px solid black;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-family: sans-serif;
-    transition: transform 0.3s ease;
+  --scale: 1;
+  --base-slot: 64px;
+  --slot-size: calc(var(--base-slot) * var(--scale));
+  --grid-gap: calc(4px * var(--scale));
+  --slot-border: calc(2px * var(--scale));
+  --container-border: calc(8px * var(--scale));
+  --container-radius: calc(6px * var(--scale));
+  --pad-top: calc(48px * var(--scale));
+  --pad-side: calc(24px * var(--scale));
+  --pad-bottom: calc(24px * var(--scale));
+  --drag-size: calc(10rem * var(--scale));
+
+  position: relative;
+  width: fit-content;
+  padding: var(--pad-top) var(--pad-side) var(--pad-bottom) var(--pad-side);
+  background-color: #c6c6c6;
+  border-radius: var(--container-radius);
+  border: var(--container-border) solid black;
+  display: flex;
+  flex-direction: column;
+  gap: calc(10px * var(--scale));
+  font-family: sans-serif;
+  box-sizing: border-box;
+  transition: all 160ms ease;
 }
 
 .inventory__dragAndDrop {
-    width: 10rem;
-    position: absolute;
-    top: -3.5rem;
-    right: -3.5rem;
+  width: var(--drag-size);
+  position: absolute;
+  top: calc(-56px * var(--scale));
+  right: calc(-56px * var(--scale));
 }
 
 .crafting-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0 0 3rem 0;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 calc(3rem * var(--scale)) 0;
+  gap: calc(10px * var(--scale));
+}
+
+.grid-3x3,
+.grid-9x3,
+.hotbar {
+  display: grid;
+  gap: var(--grid-gap);
+  justify-content: center;
 }
 
 .grid-3x3 {
-    display: grid;
-    grid-template-columns: repeat(3, 64px);
-    gap: 4px;
+  grid-template-columns: repeat(3, var(--slot-size));
 }
 
 .grid-9x3 {
-    display: grid;
-    grid-template-columns: repeat(9, 64px);
-    gap: 4px;
+  grid-template-columns: repeat(9, var(--slot-size));
 }
 
 .hotbar {
-    display: grid;
-    grid-template-columns: repeat(9, 64px);
-    gap: 4px;
+  grid-template-columns: repeat(9, var(--slot-size));
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .slot {
-    width: 64px;
-    height: 64px;
-    background-color: #888;
-    border: 2px solid #444;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: var(--slot-size);
+  height: var(--slot-size);
+  background-color: #888;
+  border: var(--slot-border) solid #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .item-icon {
-    width: 48px;
-    height: 48px;
-    image-rendering: pixelated;
+  width: calc(var(--slot-size) * 0.75);
+  height: calc(var(--slot-size) * 0.75);
+  image-rendering: pixelated;
 }
 
 @media (max-width: 856px) {
-    .inventory-container {
-        transform: scale(0.8);
-        transform-origin: top center;
-    }
-
-    .inventory__dragAndDrop {
-        width: 8.5rem;
-        position: absolute;
-        top: -3.5rem;
-        right: -3.5rem;
-    }
+  .inventory-container { --scale: 0.8; }
 }
 
 @media (max-width: 600px) {
-    .inventory-container {
-        transform: scale(0.65);
-    }
+  .inventory-container { --scale: 0.65; }
 }
 
 @media (max-width: 420px) {
-    .inventory-container {
-        transform: scale(0.5);
-    }
+  .inventory-container { --scale: 0.5; }
 }
