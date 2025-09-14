@@ -44,9 +44,13 @@
 .crafting-section {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0 0 calc(3rem * var(--scale)) 0;
-  gap: calc(10px * var(--scale));
+  gap: calc(24px * var(--scale));
+}
+
+.inventory__arrow {
+  width: calc(5rem * var(--scale));;
 }
 
 .grid-3x3,

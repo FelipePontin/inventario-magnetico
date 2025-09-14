@@ -5,6 +5,7 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import Slot from "./Slot";
 import { itemsMinecraft } from "./itemsMinecraft";
+import ArrowInventory from "../../images/arrow_inventory.png";
 import DragAndDrop from "../../images/drag_and_drop.png";
 import "./Inventory.css";
 
@@ -71,7 +72,7 @@ const Inventory = () => {
                 />
               ))}
             </div>
-
+            <img className="inventory__arrow" src={ArrowInventory.src} />
             <div className="grid-1x1">
               <Slot key={9} index={9} item={slots[9]} onDrop={handleDrop} />
             </div>
