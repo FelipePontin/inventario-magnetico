@@ -30,6 +30,8 @@ const Banner = ({
       className={`banner ${positions[textPosition ?? "left"]}`}
       style={{
         backgroundImage: background ? `url("${background}")` : undefined,
+        backgroundPosition:
+          textPosition === "right" ? "right center" : "left center",
       }}
     >
       <div className="banner__content">
