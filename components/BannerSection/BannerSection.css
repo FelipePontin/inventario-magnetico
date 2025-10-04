@@ -43,8 +43,8 @@
 }
 
 .bannerSection__image {
-    max-width: max-content;
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
 }
 
 .bannerSection__social {
