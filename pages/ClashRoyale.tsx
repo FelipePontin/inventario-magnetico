@@ -18,6 +18,9 @@ import RoyalGiantBackground from "../images/royal_giant_background.png";
 import BackgroundPurple from "../images/background_purple.jpg";
 import MisteryBox from "../images/MysteryBox.png";
 
+import DeckMao from "../images/product/imagem_cartas_na_mao.png";
+import DeckGeladeira from "../images/product/imagem_carta_no_deck.png";
+
 const ClashRoyale = () => {
   return (
     <div className="page">
@@ -32,7 +35,7 @@ const ClashRoyale = () => {
       <BannerSection
         title="Conjunto de Ímãs do Clash Royale"
         subtitle="Monte seu deck, organize estratégias e leve a diversão da arena para a vida real."
-        image={ImageBase.src}
+        image={DeckMao.src}
         imageText={ImaIcon.src}
         imagePosition="left"
       />
@@ -57,7 +60,7 @@ const ClashRoyale = () => {
         <br />
         <p>Fixam em qualquer <b>superfície metálica</b></p>
         "
-        image={ImageBase.src}
+        image={DeckGeladeira.src}
         imageText={ClashRoyaleChest.src}
         imagePosition="right"
       />
