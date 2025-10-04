@@ -29,14 +29,21 @@ const ClashRoyale = () => {
         subtitle="Agora você pode criar, organizar e brincar com seu deck do Clash Royale na sua geladeira, quadro ou qualquer superfície metálica."
         background={ClashRoyaleBackground.src}
         image={Logo.src}
+        alt={
+          "Imagem Background Ilustração Mini Pekka Clash Royale Inventario Magnetico"
+        }
         buttonText="Quero meu deck agora"
-        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
       />
       <BannerSection
         title="Conjunto de Ímãs do Clash Royale"
         subtitle="Monte seu deck, organize estratégias e leve a diversão da arena para a vida real."
         image={DeckMao.src}
         imageText={ImaIcon.src}
+        alt={
+          "Imagem produto em mãos Inventario Magnetico com cartas do Clash Royale"
+        }
+        altIcon={"Imã Icone Clash Royale Inventario Magnetico"}
         imagePosition="left"
       />
       <Banner
@@ -45,16 +52,17 @@ const ClashRoyale = () => {
           "Não é apenas decoração, é uma forma divertida de brincar, imaginar e transformar qualquer espaço em um pedacinho do universo Clash Royale."
         }
         background={ClashRoyaleTroops.src}
+        alt={"Imagem ilustração tropas Clash Royale Inventario Magnetico"}
         buttonText={"COMPRAR AGORA"}
-        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"left"}
       />
       <BannerSection
         title="O que vem na caixa?"
         subtitle="
-        <p><b>1x</b> Tabuleiro do Clash Royale (deck magnético)</p>
+        <p><b>1x</b> Deck base do Clash Royale (deck magnético)</p>
         <br />
-        <p><b>50x</b> peças de cartas</p>
+        <p><b>25</b> cartas do Clash Royale</p>
         <br />
         <p>Impressão em <b>alta resolução</b></p>
         <br />
@@ -62,6 +70,10 @@ const ClashRoyale = () => {
         "
         image={DeckGeladeira.src}
         imageText={ClashRoyaleChest.src}
+        alt={
+          "Imagem produto em mãos Inventario Magnetico com cartas do Clash Royale"
+        }
+        altIcon={"Báu Icone Clash Royale Inventario Magnetico"}
         imagePosition="right"
       />
       <Banner
@@ -70,8 +82,9 @@ const ClashRoyale = () => {
           "Seja para aniversário, datas especiais ou simplesmente para surpreender, é um presente épico que vai deixar qualquer fã da arena com um sorriso no rosto."
         }
         background={BackgroundPekka.src}
+        alt="Imagem background Pekka ilustrativo Clash Royale Inventario Magnetico"
         buttonText={"GARANTIR O MEU AGORA"}
-        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"right"}
       />
       <CardReview
@@ -84,6 +97,7 @@ const ClashRoyale = () => {
       <Faq
         title={"PERGUNTAS FREQUENTES"}
         image={MisteryBox.src}
+        alt="Imagem báu misterioso Clash Royale Inventario Magnetico"
         background={FaqBackground.src}
       />
       <BannerSection
@@ -91,6 +105,7 @@ const ClashRoyale = () => {
         subtitle="Fique por dentro das novidades, lançamentos e promoções exclusivas."
         image={Logo.src}
         imagePosition="right"
+        alt={"Imagem logo Inventario Magnetico Clash Royale"}
         socialMedia={true}
       />
       <Footer

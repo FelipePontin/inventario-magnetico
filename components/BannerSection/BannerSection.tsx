@@ -10,6 +10,8 @@ export interface BannerSectionProps {
   title?: string;
   subtitle?: string;
   image?: string;
+  alt?: string;
+  altIcon?: string;
   imageText?: string;
   imagePosition?: "left" | "right";
   socialMedia?: boolean;
@@ -19,6 +21,8 @@ const BannerSection = ({
   title,
   subtitle,
   image,
+  alt,
+  altIcon,
   imageText,
   imagePosition,
   socialMedia,
@@ -30,11 +34,11 @@ const BannerSection = ({
 
   return (
     <section className={`bannerSection ${positions[imagePosition ?? "left"]}`}>
-      <img className="bannerSection__image" src={image} />
+      <img className="bannerSection__image" src={image} alt={alt} />
       <div className="bannerSection__content">
         <div className="bannerSection__title--division">
           {imageText && (
-            <img className="bannerSection__image--text" src={imageText} />
+            <img className="bannerSection__image--text" src={imageText} alt={altIcon} />
           )}
           <h1 className="bannerSection__title">{title}</h1>
         </div>

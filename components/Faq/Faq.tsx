@@ -9,10 +9,11 @@ import "./Faq.css";
 export interface FaqProps {
   title?: string;
   image?: string;
+  alt?: string;
   background?: string;
 }
 
-const Faq = ({ title, image, background }: FaqProps) => {
+const Faq = ({ title, image, alt, background }: FaqProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -25,7 +26,7 @@ const Faq = ({ title, image, background }: FaqProps) => {
         backgroundImage: background ? `url("${background}")` : undefined,
       }}
     >
-      <img className="faq__image" src={image} />
+      <img className="faq__image" src={image} alt={alt} />
       <div className="faq__division">
         <h1 className="faq__title">{title}</h1>
         <div className="faq__questions">

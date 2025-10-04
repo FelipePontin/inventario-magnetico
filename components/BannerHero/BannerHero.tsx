@@ -9,6 +9,7 @@ export interface BannerHeroProps {
   subtitle?: string;
   background?: string;
   image?: string;
+  alt?: string;
   buttonText?: string;
   buttonLink?: string;
 }
@@ -18,6 +19,7 @@ const BannerHero = ({
   subtitle,
   background,
   image,
+  alt,
   buttonText,
   buttonLink,
 }: BannerHeroProps) => {
@@ -27,8 +29,14 @@ const BannerHero = ({
       style={{
         backgroundImage: background ? `url("${background}")` : undefined,
       }}
+      role="img"
+      aria-label={alt}
     >
-      <img className="bannerHero__image" src={image}></img>
+      <img
+        className="bannerHero__image"
+        src={image}
+        alt={"Imagem logo Clash Royale Inventario Magnetico"}
+      ></img>
       <h1 className="bannerHero__title">{title}</h1>
       <p className="bannerHero__subtitle">{subtitle}</p>
       <Button href={buttonLink} text={buttonText} />

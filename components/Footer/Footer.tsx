@@ -14,6 +14,10 @@ const Footer = ({ text, background }: FooterProps) => {
       style={{
         backgroundImage: background ? `url("${background}")` : undefined,
       }}
+      role="img"
+      aria-label={
+        "Imagem armadura Maga Cavaleiro Clash Royale Inventario Magnetico"
+      }
     >
       <p className="footer__text">{text}</p>
     </footer>

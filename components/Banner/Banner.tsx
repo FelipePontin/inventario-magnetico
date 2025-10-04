@@ -8,6 +8,7 @@ export interface BannerProps {
   title?: string;
   subtitle?: string;
   background?: string;
+  alt?: string;
   buttonText?: string;
   buttonLink?: string;
   textPosition?: "left" | "right" | "center";
@@ -17,6 +18,7 @@ const Banner = ({
   title,
   subtitle,
   background,
+  alt,
   buttonText,
   buttonLink,
   textPosition,
@@ -35,6 +37,8 @@ const Banner = ({
         backgroundPosition:
           textPosition === "right" ? "right center" : "left center",
       }}
+      role="img"
+      aria-label={alt}
     >
       <div className="banner__content">
         <h1 className="banner__title">{title}</h1>
