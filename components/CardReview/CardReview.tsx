@@ -25,7 +25,7 @@ const CardReview = ({ title, subtitle, imageIcon }: CardReviewProps) => {
         {reviews.map((item, id) => {
           return (
             <div className="cardReview__card" key={id}>
-              <img className="cardReview__verify" src={VerifyIcon.src} />
+              <img className="cardReview__verify" src={VerifyIcon.src} alt='Selo de avaliação verificada Clash Royale Inventario MagneticoF' />
               {/* <img className="cardReview__image" src={item.image} /> */}
               <div className="cardReview__stars">
                 <img className="cardReview__star" src={StarIcon.src} alt='Imagem estrela avaliação Clash Royale Inventario Magnetico' />

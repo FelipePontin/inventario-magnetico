@@ -41,6 +41,7 @@
 
 .cardReview__verify {
     position: absolute;
+    width: 1.75rem;
     top: -1rem;
     right: -1rem;
 }

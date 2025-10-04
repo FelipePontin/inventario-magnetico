@@ -32,6 +32,7 @@ const ClashRoyale = () => {
         alt={
           "Imagem Background Ilustração Mini Pekka Clash Royale Inventario Magnetico"
         }
+        aria-label="Imagem Background Ilustração Mini Pekka Clash Royale Inventario Magnetico"
         buttonText="Quero meu deck agora"
         buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
       />
@@ -43,6 +44,7 @@ const ClashRoyale = () => {
         alt={
           "Imagem produto em mãos Inventario Magnetico com cartas do Clash Royale"
         }
+        aria-label="Imagem produto em mãos Inventario Magnetico com cartas do Clash Royale"
         altIcon={"Imã Icone Clash Royale Inventario Magnetico"}
         imagePosition="left"
       />
@@ -54,6 +56,7 @@ const ClashRoyale = () => {
         background={ClashRoyaleTroops.src}
         alt={"Imagem ilustração tropas Clash Royale Inventario Magnetico"}
         buttonText={"COMPRAR AGORA"}
+        aria-label="Imagem ilustração tropas Clash Royale Inventario Magnetico"
         buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"left"}
       />
@@ -73,6 +76,7 @@ const ClashRoyale = () => {
         alt={
           "Imagem produto em mãos Inventario Magnetico com cartas do Clash Royale"
         }
+        aria-label="Imagem produto em mãos Inventario Magnetico com cartas do Clash Royale"
         altIcon={"Báu Icone Clash Royale Inventario Magnetico"}
         imagePosition="right"
       />
@@ -84,6 +88,7 @@ const ClashRoyale = () => {
         background={BackgroundPekka.src}
         alt="Imagem background Pekka ilustrativo Clash Royale Inventario Magnetico"
         buttonText={"GARANTIR O MEU AGORA"}
+        aria-label="Imagem background Pekka ilustrativo Clash Royale Inventario Magnetico"
         buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"right"}
       />
@@ -98,6 +103,7 @@ const ClashRoyale = () => {
         title={"PERGUNTAS FREQUENTES"}
         image={MisteryBox.src}
         alt="Imagem báu misterioso Clash Royale Inventario Magnetico"
+        aria-label="Imagem báu misterioso Clash Royale Inventario Magnetico"
         background={FaqBackground.src}
       />
       <BannerSection
@@ -106,10 +112,12 @@ const ClashRoyale = () => {
         image={Logo.src}
         imagePosition="right"
         alt={"Imagem logo Inventario Magnetico Clash Royale"}
+        aria-label="Imagem logo Inventario Magnetico Clash Royale"
         socialMedia={true}
       />
       <Footer
         text={"© 2025 Inventário Magnético. Todos os direitos reservados."}
+        aria-label="© 2025 Inventário Magnético. Todos os direitos reservados."
         background={RoyalGiantBackground.src}
       />
     </div>

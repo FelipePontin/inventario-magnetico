@@ -38,7 +38,11 @@ const BannerSection = ({
       <div className="bannerSection__content">
         <div className="bannerSection__title--division">
           {imageText && (
-            <img className="bannerSection__image--text" src={imageText} alt={altIcon} />
+            <img
+              className="bannerSection__image--text"
+              src={imageText}
+              alt={altIcon}
+            />
           )}
           <h1 className="bannerSection__title">{title}</h1>
         </div>
@@ -48,22 +52,39 @@ const BannerSection = ({
         ></div>
         {socialMedia && (
           <div className="bannerSection__social">
-            <a href="https://www.instagram.com/inventariomagnetico">
+            <a
+              href="https://www.instagram.com/inventariomagnetico"
+              aria-label="Visite o perfil do Inventário Magnético no Instagram"
+              title="Instagram Inventário Magnético"
+            >
               <img
                 className="bannerSection__social--icon"
                 src={InstagramIcon.src}
+                alt="Instagram do Inventário Magnético Clash Royale"
               />
             </a>
-            <a href="https://www.tiktok.com/@inventariomagnetico">
+
+            <a
+              href="https://www.tiktok.com/@inventariomagnetico"
+              aria-label="Acesse o perfil do Inventário Magnético no TikTok"
+              title="TikTok Inventário Magnético"
+            >
               <img
                 className="bannerSection__social--icon"
                 src={TiktokIcon.src}
+                alt="TikTok do Inventário Magnético Clash Royale"
               />
             </a>
-            <a href="https://www.youtube.com/@InventárioMagnético">
+
+            <a
+              href="https://www.youtube.com/@InventárioMagnético"
+              aria-label="Assista aos vídeos do Inventário Magnético no YouTube"
+              title="YouTube Inventário Magnético"
+            >
               <img
                 className="bannerSection__social--icon"
                 src={YoutubeIcon.src}
+                alt="YouTube do Inventário Magnético Clash Royale"
               />
             </a>
           </div>
