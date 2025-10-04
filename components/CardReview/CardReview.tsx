@@ -26,7 +26,7 @@ const CardReview = ({ title, subtitle, imageIcon }: CardReviewProps) => {
           return (
             <div className="cardReview__card" key={id}>
               <img className="cardReview__verify" src={VerifyIcon.src} />
-              <img className="cardReview__image" src={item.image} />
+              {/* <img className="cardReview__image" src={item.image} /> */}
               <div className="cardReview__stars">
                 <img className="cardReview__star" src={StarIcon.src} />
                 <img className="cardReview__star" src={StarIcon.src} />
