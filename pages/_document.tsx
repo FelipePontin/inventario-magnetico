@@ -45,6 +45,11 @@ export default function Document() {
           name="description"
           content="Monte seu deck do Clash Royale na vida real! Ímãs colecionáveis de alta qualidade para fãs do jogo."
         />
+
+        <meta
+          name="google-site-verification"
+          content="W5NmmEgEA4eWR-kjf7sxXhrr_al6u2GNwFnSN-Qw3JA"
+        />
       </Head>
       <body>
         <Main />
