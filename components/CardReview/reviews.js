@@ -6,7 +6,7 @@ export const reviews = [
     image: "",
   },
   {
-    name: "Felipe P.",
+    name: "Julia P.",
     review:
       "Comprei de presente para meu namorado que é viciado em Clash Royale. Ele adorou e já colocou na geladeira do apartamento. As cartas são fortes, coloridas e bem acabadas. Valeu cada centavo!",
     image: "",
