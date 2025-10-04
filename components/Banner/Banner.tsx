@@ -9,6 +9,7 @@ export interface BannerProps {
   subtitle?: string;
   background?: string;
   buttonText?: string;
+  buttonLink?: string;
   textPosition?: "left" | "right" | "center";
 }
 
@@ -17,6 +18,7 @@ const Banner = ({
   subtitle,
   background,
   buttonText,
+  buttonLink,
   textPosition,
 }: BannerProps) => {
   const positions: Record<string, string> = {
@@ -37,7 +39,7 @@ const Banner = ({
       <div className="banner__content">
         <h1 className="banner__title">{title}</h1>
         <p className="banner__subtitle">{subtitle}</p>
-        <Button text={buttonText} />
+        <Button href={buttonLink} text={buttonText} />
       </div>
     </section>
   );

@@ -10,6 +10,7 @@ export interface BannerHeroProps {
   background?: string;
   image?: string;
   buttonText?: string;
+  buttonLink?: string;
 }
 
 const BannerHero = ({
@@ -18,6 +19,7 @@ const BannerHero = ({
   background,
   image,
   buttonText,
+  buttonLink,
 }: BannerHeroProps) => {
   return (
     <section
@@ -29,7 +31,7 @@ const BannerHero = ({
       <img className="bannerHero__image" src={image}></img>
       <h1 className="bannerHero__title">{title}</h1>
       <p className="bannerHero__subtitle">{subtitle}</p>
-      <Button text={buttonText} />
+      <Button href={buttonLink} text={buttonText} />
     </section>
   );
 };

@@ -27,6 +27,7 @@ const ClashRoyale = () => {
         background={ClashRoyaleBackground.src}
         image={Logo.src}
         buttonText="Quero meu deck agora"
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
       />
       <BannerSection
         title="Conjunto de Ímãs do Clash Royale"
@@ -42,6 +43,7 @@ const ClashRoyale = () => {
         }
         background={ClashRoyaleTroops.src}
         buttonText={"COMPRAR AGORA"}
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"left"}
       />
       <BannerSection
@@ -66,6 +68,7 @@ const ClashRoyale = () => {
         }
         background={BackgroundPekka.src}
         buttonText={"GARANTIR O MEU AGORA"}
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"right"}
       />
       <CardReview
