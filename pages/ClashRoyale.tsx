@@ -18,8 +18,8 @@ import RoyalGiantBackground from "../images/royal_giant_background.png";
 import BackgroundPurple from "../images/background_purple.jpg";
 import MisteryBox from "../images/MysteryBox.png";
 
-import DeckMao from "../images/product/imagem_cartas_na_mao.png";
-import DeckGeladeira from "../images/product/imagem_carta_no_deck.png";
+import DeckMao from "../images/product/produto1.png";
+import DeckGeladeira from "../images/product/produto2.png";
 
 const ClashRoyale = () => {
   return (
@@ -34,7 +34,7 @@ const ClashRoyale = () => {
         }
         aria-label="Imagem Background Ilustração Mini Pekka Clash Royale Inventario Magnetico"
         buttonText="Quero meu deck agora"
-        buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
       />
       <BannerSection
         title="Conjunto de Ímãs do Clash Royale"
@@ -57,7 +57,7 @@ const ClashRoyale = () => {
         alt={"Imagem ilustração tropas Clash Royale Inventario Magnetico"}
         buttonText={"COMPRAR AGORA"}
         aria-label="Imagem ilustração tropas Clash Royale Inventario Magnetico"
-        buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"left"}
       />
       <BannerSection
@@ -89,7 +89,7 @@ const ClashRoyale = () => {
         alt="Imagem background Pekka ilustrativo Clash Royale Inventario Magnetico"
         buttonText={"GARANTIR O MEU AGORA"}
         aria-label="Imagem background Pekka ilustrativo Clash Royale Inventario Magnetico"
-        buttonLink="https://inventariomagnetico.shop/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
         textPosition={"right"}
       />
       <CardReview
