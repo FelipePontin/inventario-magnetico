@@ -34,7 +34,7 @@ const ClashRoyale = () => {
         }
         aria-label="Imagem Background Ilustração Mini Pekka Clash Royale Inventario Magnetico"
         buttonText="Quero meu deck agora"
-        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas-25-cartas"
       />
       <BannerSection
         title="Conjunto de Ímãs do Clash Royale"
@@ -57,7 +57,7 @@ const ClashRoyale = () => {
         alt={"Imagem ilustração tropas Clash Royale Inventario Magnetico"}
         buttonText={"COMPRAR AGORA"}
         aria-label="Imagem ilustração tropas Clash Royale Inventario Magnetico"
-        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas-25-cartas"
         textPosition={"left"}
       />
       <BannerSection
@@ -89,7 +89,7 @@ const ClashRoyale = () => {
         alt="Imagem background Pekka ilustrativo Clash Royale Inventario Magnetico"
         buttonText={"GARANTIR O MEU AGORA"}
         aria-label="Imagem background Pekka ilustrativo Clash Royale Inventario Magnetico"
-        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas"
+        buttonLink="https://inventariomagnetico.lojavirtualnuvem.com.br/produtos/ima-de-geladeira-clash-royale-deck-e-cartas-personalizadas-25-cartas"
         textPosition={"right"}
       />
       <CardReview
